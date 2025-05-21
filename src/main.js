@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import FlagIcon from 'vue-flag-icon'; // Импорт плагина
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(FlagIcon); // Регистрация плагина
+app.mount('#app');
